@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@layer components {
+  body {
+    @apply bg-blue-main font-poppins;
+  }
+  .grad-circle {
+    @apply bg-white/25  w-[400px]  drop-shadow-md h-[400px] rounded-full  blur-[100px]  fixed;
+  }
+  /* .carousel .card {
+    @apply absolute;
+  } */
+}
