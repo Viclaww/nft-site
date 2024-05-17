@@ -1,23 +1,21 @@
-import alien1 from "../../assets/61184628-cd63-4a4f-a1f3-d0da2680b3d3 1.png";
-import alien2 from "../../assets/5dd98d15-b620-483d-a205-2bae6561a9ea 1.png";
-import alien3 from "../../assets/019845e5-ff15-4417-99e7-a2beaf54265e 1.png";
+import alien1 from "../../assets/h1.png";
+import alien2 from "../../assets/h2.png";
+import alien3 from "../../assets/h3.png";
+
 import Card from "../../Components/Card";
-import { useGSAP } from "@gsap/react";
+
 const HighQuality = () => {
-  useGSAP(() => {
-    gsap.to("", { sk });
-  });
   return (
-    <div className="text-white w-full px-8 justify-around flex">
-      <div className="flex relative">
-        <div className="absolute scale-90 top-20  skew-x-6">
-          <Card img={alien1} alt="" />
+    <div className="text-white w-full font-poppins px-8 justify-center mx-auto flex">
+      <div className="flex w-3/5 md:w-[700px] card-container relative">
+        <div className="relative me translate-x-9 -translate-y-7 left-[10%] scale-75 top-0 ">
+          <Card img={alien1} classNames={"card1"} />
         </div>
-        <div className="absolute scale-90 top-20">
-          <Card img={alien2} alt="" />
+        <div className="relative  me  -left-[5%] z-20  scale-[0.65] top-10">
+          <Card img={alien2} classNames={"card1"} />
         </div>
-        <div className="absolute scale-90 top-0 right-0 -skew-x-6">
-          <Card img={alien3} alt="" />
+        <div className="relative   -left-[30%] -translate-x-24 -translate-y-12 scale-[0.80] top-0 ">
+          <Card img={alien3} classNames={"card2"} />
         </div>
       </div>
       <div className="flex w-1/3 flex-col">

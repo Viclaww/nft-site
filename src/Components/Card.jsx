@@ -1,10 +1,18 @@
 import { FaEthereum } from "react-icons/fa6";
 
-const Card = ({ img }) => {
+const Card = ({ img, classNames }) => {
   return (
-    <div className="card bg-gradient-to-t p-4  from-[#2E2F4D] to-[#2E2F4D] w-[300px] gap-4 rounded-lg flex flex-col h-[430px] ">
+    <div
+      className={`card bg-gradient-to-t p-4  from-[#2E2F4D] to-[#2E2F4D] w-[300px] gap-4 rounded-lg flex flex-col h-[430px] ${
+        classNames && classNames
+      } `}
+    >
       <div className="w-full bg-white h-[65%] overflow-hidden">
-        <img src={img} className="object-cover " alt={"Star Warrior"} />
+        <img
+          src={img}
+          className="object-cover w-[120%] h-[120%]"
+          alt={"Star Warrior"}
+        />
       </div>
       <div className="flex text-white w-full gap-3 flex-col">
         <h4 className="text-xl font-semibold">Star Warrior 3353</h4>

@@ -13,9 +13,6 @@ export default {
         "nft-card-blue-2": "#262745",
         "purple-primary": "#7531CB",
       },
-      backgroundImage: {
-        "gradient-for-bg": ["lin"],
-      },
     },
   },
   plugins: [],

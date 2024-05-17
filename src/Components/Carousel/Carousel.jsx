@@ -4,7 +4,8 @@ import alien2 from "../../assets/5dd98d15-b620-483d-a205-2bae6561a9ea 1.png";
 import alien3 from "../../assets/019845e5-ff15-4417-99e7-a2beaf54265e 1.png";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-
+import ScrollTRigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTRigger);
 export default function Carousel() {
   useGSAP(() => {
     let tl = gsap.timeline({
@@ -12,6 +13,10 @@ export default function Carousel() {
       repeat: -1,
       repeatDelay: 1,
       yoyo: true,
+      scrollTrigger: {
+        trigger: ".carousel",
+        end: "bottom 70%",
+      },
     });
     tl.fromTo(".last", { duration: 1, scale: 0 }, { scale: 1 })
       .fromTo(".second", { opacity: 0 }, { scale: 1.3, opacity: 1 })

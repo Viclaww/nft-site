@@ -19,3 +19,20 @@
     @apply absolute;
   } */
 }
+
+.card-container {
+  perspective: 1000px;
+}
+.me {
+  transform-style: preserve-3d;
+}
+.card1 {
+  transform: skew(10deg, 0deg);
+  transform-origin: bottom;
+  /* background: #000; */
+}
+.card2 {
+  transform: skew(-10deg, 0deg);
+  transform-origin: bottom;
+  /* background: #000; */
+}
